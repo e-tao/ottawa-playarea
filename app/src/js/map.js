@@ -28,6 +28,7 @@ Map.marks = async function (list) {
             .setLngLat(item.coords)
             .setPopup(new mapboxgl.Popup({
                 closeButton: false,
+                closeOnMove: true
             }).setHTML(`<p>${item.name}</p><p>${item.address}</p>`))
             .addTo(displayMap);
         marks.push(mark)

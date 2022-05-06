@@ -49,17 +49,24 @@ document.getElementById("filter").addEventListener("click", async () => {
 });
 
 
-document.getElementById("clear").addEventListener("click", () => {
+document.getElementById("clear").addEventListener("click", async () => {
     // console.log("clear buttom clicked")
     let allCheckbox = document.getElementsByClassName("form-check-input");
     for (let i = 0; i < allCheckbox.length; i++) {
         allCheckbox[i].checked = false;
     }
+
+    qString = "";
+    let list = await getAllLocations(qString);
+    // console.log(list);
+    Map.marks(list);
+
 });
 
+init();
 
 
-let init = async function () {
+async function init() {
     Map.remove();
     Map.mapInit();
     let list = await getAllLocations(qString);
@@ -106,5 +113,3 @@ function queryString(filters) {
     return query;
 }
 
-
-init();
