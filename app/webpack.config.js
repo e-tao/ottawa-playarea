@@ -8,11 +8,17 @@ const config = {
     filename: "bundle.js",
     assetModuleFilename: "ast/[name][ext]",
   },
+  experiments: { topLevelAwait: true },
   module: {
     rules: [
       {
         test: /\.js$/,
-        use: "babel-loader",
+        use: {
+          loader: "babel-loader",
+          options: {
+            plugins: ['@babel/plugin-syntax-top-level-await'],
+          }
+        },
         exclude: /node_modules/,
       },
       {

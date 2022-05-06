@@ -7,10 +7,13 @@ import mapTemplate from "./hbs/map.hbs";
 
 
 import Map from "./js/map";
+import Weather from "./js/weather";
 
+let curWeather = await Weather.getCurrentWeather(); //enabled experiments: { topLevelAwait: true }
+// console.log(curWeather);
 
 const appEl = document.getElementById("app");
-const siteInfo = { title: "Ottawa Playareas" };
+const siteInfo = { title: "Ottawa Playareas", weather: curWeather.weather[0] };
 window.document.title = siteInfo.title;
 appEl.innerHTML = layoutTemplate(siteInfo);
 
@@ -74,7 +77,7 @@ async function getAllLocations(qString) {
         response = await (await fetch(queryString)).json();
     }
 
-    console.log(response[0]);
+    // console.log(response[0]);
 
     let locationList = [];
 

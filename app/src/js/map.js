@@ -2,7 +2,7 @@
 
 import apiKey from "../../apikey";
 
-mapboxgl.accessToken = apiKey.access.apiKey;
+mapboxgl.accessToken = apiKey.mapbox.access.apiKey;
 let Map = {};
 let displayMap;
 let marks = [];
