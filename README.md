@@ -1,6 +1,20 @@
-please consider create your own yourname-dev-branch working branch, so we can keep the main safe from broken code. We will ONLY merge the working code to main.
+## Introduction
+A web app shows all the palyareas in city of ottawa.  Use can filter their selctions with different craterias.
 
-you can create your dev-branch after pull the main by using
+## Tech stack
+ - Frontend 
+   HTML, CSS, Javascript, Webpack
+ - Backend
+   Express, mariadb database
+ - 3rd Party API
+   MapBox, OpenWeather, Ottawa.ca
 
-`git switch -c yourname-dev-branch` OR
-`git checkout -b yourname-dev-branch`
+## Other tools used
+The project uses the following language, toolkit, IDE, database etc...
+- [VS Code]
+- [Git/GitHub]
+
+
+## Screenshot
+![Application Screenshot](https://github.com/e-tao/contact-on-map/blob/main/Capture.PNG?raw=true)
+
