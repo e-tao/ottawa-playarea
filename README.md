@@ -1,12 +1,12 @@
 ## Introduction
-A web app shows all the palyareas in city of ottawa.  Use can filter their selctions with different craterias.
+A web app shows all the palyareas in city of Ottawa.  Users can filter their selctions with different craterias.
 
 ## Tech stack
- - Frontend 
+ - Frontend:
    HTML, CSS, Javascript, Webpack
- - Backend
+ - Backend:
    Express, mariadb database
- - 3rd Party API
+ - 3rd Party APIs:
    MapBox, OpenWeather, Ottawa.ca
 
 ## Other tools used
