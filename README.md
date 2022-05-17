@@ -16,5 +16,5 @@ The project uses the following language, toolkit, IDE, database etc...
 
 
 ## Screenshot
-![Application Screenshot](https://github.com/e-tao/contact-on-map/blob/main/Capture.PNG?raw=true)
+![Application Screenshot](https://github.com/e-tao/ottawa-playarea/blob/main/Capture.PNG?raw=true)
 
